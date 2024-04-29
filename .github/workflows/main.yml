@@ -16,6 +16,9 @@ jobs:
       with:
         path: . # Specify the path where the repository should be checked out
 
+    - name: Override npm registry
+      run: npm config set registry https://registry.npmjs.org/
+      
     - name: Install dependencies
       run: npm install
 
