@@ -1,0 +1,12 @@
+on: workflow_dispatch
+name: Example Workflow
+jobs:
+  runNpmTarget:
+    name: Run webapp front-end test
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1.1
+    - name: Run NPM target
+      uses: amoncaldas/github-action-webapp-front-end-test@v1.4
+      with:
+        target: 'custom-target'  # Remove `with` section to run default target `test`
