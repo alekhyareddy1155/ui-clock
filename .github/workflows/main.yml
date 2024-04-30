@@ -20,7 +20,7 @@ jobs:
       run: npm config set registry https://registry.npmjs.org/
       
     - name: Install dependencies
-      run: npm install eslint eslint-config-prettier eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks 
+      run: npm install eslint  
 
     - name: Run ESLint
       run: npm run lint
